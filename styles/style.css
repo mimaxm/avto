@@ -294,13 +294,17 @@ ul {
    width: 100%;
 }
 
-.slider__box-1 {
+/* .slider__box-1 {
    width: calc(50% - 40px);
    float: left;
 }
 .slider__box-2 {
    width: calc(50% - 40px);
    float: right;
+} */
+
+.slider-item {
+   display: inline-block;
 }
 
 .team {
