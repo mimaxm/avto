@@ -9,7 +9,7 @@
       no_overlay: false,
       move_slider_on_hover: true,
       move_with_handle_only: true,
-      click_to_move: false
+      click_to_move: true
     }, options);
 
     return this.each(function() {
