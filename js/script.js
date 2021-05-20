@@ -6,8 +6,10 @@ $(document).ready(function() {
       click_to_move: true, 
   });
 
-  $('.gallery__slide').slick({
+  const gallerySlider = $('.gallery__slide').slick({
     slidesToShow: 2,
+    slidesToScroll: 2,
+    arrows: false,
     responsive: [
       {
         breakpoint: 480,
@@ -18,6 +20,14 @@ $(document).ready(function() {
       }
     ]
   });
+
+  $('.arrows .prev').click(() => {
+    gallerySlider.slick('slickPrev');
+  })
+
+  $('.arrows .next').click(() => {
+    gallerySlider.slick('slickNext');
+  })
     
   // $('.gallery__slide').slick();
   // $('.gallery__slide').slick({
@@ -56,22 +66,21 @@ $(document).ready(function() {
         }
       ]
     });
-
-     $('.slider-for').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: false,
-  fade: true,
-  asNavFor: '.slider-nav'
-});
-$('.slider-nav').slick({
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  asNavFor: '.slider-for',
-  dots: true,
-  centerMode: true,
-  focusOnSelect: true
-});
+    $('.slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.slider-nav'
+    });
+    $('.slider-nav').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.slider-for',
+        dots: true,
+        centerMode: true,
+        focusOnSelect: true
+    });
 
     $('a[href^="#"').on('click', function() {
 
