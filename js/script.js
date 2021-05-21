@@ -75,4 +75,13 @@ $(document).ready(function() {
         });
         return false;
     });
- });
+    $('.header__burger').click(function(){
+      $('.header__burger, .menu').toggleClass('active');
+      $('.body').toggleClass('lock');
+      });
+
+      $('.menu__item-link').click(function(){
+          $('.header__burger, .menu').removeClass('active');
+          $('.body').removeClass('lock');
+      });
+    });

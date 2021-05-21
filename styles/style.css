@@ -56,6 +56,22 @@ ul {
 .header {
    background-color: #252525;
    color: #ebebeb;
+   position: fixed;
+   width: 100%;
+   top: 0;
+   left: 0;
+   z-index: 50;
+}
+
+.header::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: #252525;
+   z-index: 2;
 }
 
 .header a {
@@ -69,9 +85,15 @@ ul {
    font-size: 17px;
 }
 
+.header__burger {
+   display: none;
+}
+
 .logo {
    padding: 15px 0;
    text-align: center;
+   position: relative;
+   z-index: 3;
 }
 
 .logo__img {
@@ -82,6 +104,14 @@ ul {
    font-size: 20px;
    font-weight: 700;
    text-transform: uppercase;
+}
+
+.logo__text-subtitle {
+   display: none;
+}
+
+.menu {
+   z-index: 3;
 }
 
 .menu__list {
@@ -108,6 +138,7 @@ ul {
    display: block;
    position: relative;
    margin-left: 24px;
+   z-index: 3;
 }
 
 .contacts-top__phone {
@@ -147,7 +178,7 @@ ul {
 
 .top__wrap {
    display: flex;
-   padding: 70px 0 60px 0;
+   padding: 160px 0 60px 0;
 }
 
 .top__content {
@@ -183,7 +214,7 @@ ul {
 .top__message-text {
    display: block;
    position: relative;
-   margin-top: 30px;
+   margin: 30px auto;
    font-size: 24px;
 }
 
@@ -359,13 +390,14 @@ ul {
 
 .contacts__map {
    width: 50%;
-   border-right: 1px solid rgb(51, 51, 51, 0.1);
+   border-left: 1px solid rgb(51, 51, 51, 0.1);
    /* -webkit-box-shadow: 6px 0px 9px -2px rgba(9, 9, 9, 0.6);
    -moz-box-shadow: 6px 0px 9px -2px rgba(9, 9, 9, 0.6);
    box-shadow: 6px 0px 9px -2px rgba(9, 9, 9, 0.6); */
 }
 
 .contacts-bottom {
+   width: 460px;
    padding: 30px 0;
 }
 
@@ -394,10 +426,10 @@ ul {
 }
 
 .contacts-bottom__block {
-   display: block;
-   max-width: 500px;
-   font-size: 25px;
-   margin: 0 auto;   
+   display: flex;
+   width: 50%;
+   justify-content: center;
+   font-size: 25px; 
 }
 
 .contacts__message {
