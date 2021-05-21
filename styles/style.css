@@ -215,14 +215,14 @@ ul {
    display: flex;
    width: 100%;
    flex-wrap: wrap;
-   row-gap: 40px;
-   column-gap: 50px;
    padding-bottom: 60px;
 }
 
 .services__item {
    background: #ebebeb;
-   width: calc(33.3% - 50/3*2px);
+   max-width: 365px;
+   width: 100%;
+   margin: 0 auto 50px;
 }
 
 .services__img {
