@@ -1,0 +1,37 @@
+@media screen and (min-width: 1281px) {
+
+   /* hi-res laptops and desktops */
+
+}
+
+@media screen and (max-width: 1281px) {
+
+   /* big landscape tablets, laptops, and desktops */
+   .logo__text-subtitle {
+      display: none;
+   }
+   
+}
+
+@media screen and (max-width: 1025px) {
+   /* tablet, landscape iPad, lo-res laptops ands desktops */
+
+
+}
+
+@media screen and (max-width: 801px){
+
+   /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+
+}
+
+
+@media screen and (max-width: 480px) {
+   /* smartphones, Android phones, landscape iPhone */
+
+}
+
+@media screen and (max-width: 320px) {
+   /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+ 
+}

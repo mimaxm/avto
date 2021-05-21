@@ -12,6 +12,7 @@ html {
 
 a {
    text-decoration: none;
+   color: #333333;
 }
 
 ul {
@@ -24,31 +25,32 @@ ul {
    margin: 0 auto;
 }
 
-.section__title {
+.section__title, .section__title-white {
    display: block;
    font-size: 40px;
    font-weight: 900;
    text-transform: uppercase;
    text-align: center;
-   margin-bottom: 70px;
-   padding: 50px 0 0 0;
+   margin-bottom: 50px;
+   padding: 70px 0 0 0;
 }
 
 .section__title-white {
    color: #ebebeb;
 }
 
-.section__title::after {
+.section__title-white::after {
    content: "";
    display: block;
    margin: 15px auto 0;
    width: 20%;
    height: 3px;
-   background-color: #51f2fc;
+   background-color: rgb(81, 242, 252, 0.8);
 }
 
 .body {
    font-family: 'Roboto', sans-serif;
+   color: #333333;
 }
 
 .header {
@@ -114,7 +116,7 @@ ul {
    margin-bottom: 13px;
 }
 
-.contacts-top__phone-link:hover, .contacts__geo-link:hover {
+.contacts-top__phone-link:hover, .contacts-top__geo-link:hover {
    color: #51f2fc;
 }
 
@@ -147,13 +149,6 @@ ul {
    display: flex;
    margin: 70px 0 90px 0;
 }
-
-/* .top__content {
-   background-image: url(../images/bg-top2.png);
-   background-repeat: no-repeat;
-   background-position: right;
-   height: 80vh;
-} */
 
 .top__content {
    width: 50%;
@@ -277,9 +272,6 @@ ul {
    margin-bottom: 10px;
 }
 
-
-
-
 .team {
    background: url('../images/bg-team.jpg') no-repeat;
    background-size: cover;
@@ -317,9 +309,6 @@ ul {
    margin-bottom: 15px;
 }
 
-
-
-
 .slider__wrap {
    width: 100%;
    padding-bottom: 60px;
@@ -342,7 +331,6 @@ ul {
    float: right;
 }
 
-
 .gallery {
    background: url('../images/bg-services.png') no-repeat #1D2025;
    background-size: auto 100%;
@@ -352,63 +340,85 @@ ul {
 
 .gallery__wrap {
    margin: 0 auto;
-   width: 100%;
+   width: 90%;
 }
 
 .gallery__slide img {
    margin: 10px 20px;
-   -webkit-box-shadow: 0px 0px 15px 4px rgba(255, 255, 255, 0.2);
-   -moz-box-shadow: 0px 0px 15px 4px rgba(255, 255, 255, 0.2);
-   box-shadow: 0px 0px 15px 4px rgba(255, 255, 255, 0.2);
+   -webkit-box-shadow: 0px 2px 12px 0px rgba(246, 246, 246, 0.2);
+   -moz-box-shadow: 0px 2px 12px 0px rgba(246, 246, 246, 0.2);
+   box-shadow: 0px 2px 12px 0px rgba(246, 246, 246, 0.2);
 }
-
-
 
 .contacts__wrap {
    display: flex;
+   -webkit-box-shadow: 6px 0px 5px -2px rgba(9, 9, 9, 0.6);
+   -moz-box-shadow: 6px 0px 5px -2px rgba(9, 9, 9, 0.6);
+   box-shadow: 6px 0px 5px -2px rgba(9, 9, 9, 0.6);
+   /* background: rgb(241, 241, 241); */
 }
 
 .contacts__map {
    width: 50%;
+   border-right: 1px solid rgb(51, 51, 51, 0.1);
+   /* -webkit-box-shadow: 6px 0px 9px -2px rgba(9, 9, 9, 0.6);
+   -moz-box-shadow: 6px 0px 9px -2px rgba(9, 9, 9, 0.6);
+   box-shadow: 6px 0px 9px -2px rgba(9, 9, 9, 0.6); */
 }
 
-.contacts__block {
+.contacts-bottom {
+   margin-top: 30px;
+}
+
+.contacts-bottom__text {
+   position: relative;
+   padding-left: 30px;
+   border-left: 3px solid rgb(51, 51, 51, 0.7);
+}
+
+.contacts-bottom__phone {
+   display: flex;
+   align-items: center;
+   text-align: center;
+   margin-bottom: 5px;
+}
+
+.contacts-bottom__phone-link:hover, .contacts__geo-link:hover {
+   text-decoration: underline;
+}
+
+.contacts-bottom__geo {
+   display: flex;
+   align-items: center;
+   margin-bottom: 20px;
+   font-weight: 700;
+}
+
+.contacts-bottom__block {
    display: block;
-   width: 50%;
-   
-}
-
-.contacts__mesaage {
    max-width: 500px;
-   margin: 0 auto;
+   font-size: 25px;
+   margin: 0 auto;   
 }
 
-
-.slick-prev, .slick-next {
-   
+.contacts__message {
+   margin-top: 50px;
 }
 
-/* .slick-next::before, .slick-prev::before {
-   content: '';
-   position: absolute;
-   background-image: url(../images/next.svg);
-   width: 30px;
-   height: 30px;
-   opacity: 0.5;
+.footer {
+   background-color: #252525;
+   color: #ebebeb;
 }
 
-.slick-prev::before {
-   transform: rotate(180deg);
-} */
+.footer__text a {
+   color: #ebebeb;
+}
 
 .gallery__wrap {
    position: relative;
 }
-@media screen and (max-width:1400px) {
-   .gallery__wrap {
-      width: 90%;
-   }
-}
+
+
 .arrows {
    display: flex;
    justify-content: space-between;
@@ -417,24 +427,28 @@ ul {
    top: 50%;
    width: 100%;
    transform: translateY(-50%);
+   opacity: 0.6;
 }
+
 .arrow {
    width: 50px;
    cursor: pointer;
 }
+
+.arrows:hover {
+   opacity: 1;
+}
+
 .arrows .prev {
    transform: rotate(180deg);
    position: relative;
-   left: -30px;
+   left: -50px;
 }
 
 .arrows .next {
    position: relative;
-   right: -30px;
+   right: -50px;
 }
-
-
-
 
 
 @keyframes shake {

@@ -29,22 +29,6 @@ $(document).ready(function() {
     gallerySlider.slick('slickNext');
   })
     
-  // $('.gallery__slide').slick();
-  // $('.gallery__slide').slick({
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  //   arrows: false,
-  //   fade: true,
-  //   asNavFor: '.gallery__nav'
-  // });
-  // $('.gallery__nav').slick({
-  //   slidesToShow: 3,
-  //   slidesToScroll: 1,
-  //   asNavFor: '.gallery__slide',
-  //   dots: true,
-  //   centerMode: true,
-  //   focusOnSelect: true
-  // });
     $('.team__wrap').slick({
        slidesToShow: 3,
        slidesToScroll: 1,
