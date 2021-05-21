@@ -7,16 +7,112 @@
 @media screen and (max-width: 1281px) {
 
    /* big landscape tablets, laptops, and desktops */
-   .logo__text-subtitle {
-      display: none;
+   .header__top {
+      font-size: 15px;
+   }
+
+   .logo {
+      max-width: 180px;
    }
    
+   .logo__img {
+      max-height: 40px;
+   }
+
+   .logo__text-subtitle {
+      font-size: 11px;
+   }
+
+   .top__image-png {
+      max-height: 380px;
+   }
+
+   .top__title {
+      font-size: 36px;
+      margin-bottom: 17px;
+   }
+
+   .top__text {
+      font-size: 18px;
+   }
+
+   .top__message {
+      margin: 50px 0 0 0;
+   }
+
+
 }
 
 @media screen and (max-width: 1025px) {
    /* tablet, landscape iPad, lo-res laptops ands desktops */
+   
+   .logo__text-title {
+      font-size: 16px;
+   }
 
+   .section__title, .section__title-white {
+      font-size: 30px;
+      padding: 40px 0 0 0;
+      margin-bottom: 30px;
+   }
 
+   .top__wrap, .services__wrap, .advantages__wrap, .team__wrap, .slider__wrap, .gallery {
+      padding-bottom: 40px;
+   }
+
+   .top__title {
+      font-size: 32px;
+   }
+
+   .top__text {
+      font-size: 15px;
+   }
+
+   .top__message-img {
+      height: 60px;
+      width: 60px;
+      margin: 0 10px;
+   }
+
+   .top__message-text {
+      font-size: 18px;
+      margin-top: 10px;
+   }
+
+   .top__message-text::after {
+      left: 280px;
+      bottom: 8px;
+      width: 65px;
+      height: 65px;
+   }
+
+   .top__image-png {
+      max-height: 300px;
+   }
+
+   .services__text {
+      padding: 20px;
+   }
+
+   .services__text-title {
+      font-size: 16px;
+   }
+
+   .services__text-descr {
+      font-size: 14px; 
+   }
+
+   .slider__box-1, .slider__box-2 {
+      width: calc(50% - 20px);
+   }
+
+   .contacts-bottom__geo {
+      font-size: 22px;
+   }
+
+   .contacts-bottom__block {
+      font-size: 20px;
+   }
 }
 
 @media screen and (max-width: 801px){
