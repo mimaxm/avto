@@ -48,8 +48,13 @@
 @media screen and (max-width: 1025px) {
    /* tablet, landscape iPad, lo-res laptops ands desktops */
    
-   .logo__text-title {
-      font-size: 16px;
+   .logo__text-title,
+   .menu__item {
+      font-size: 14px;
+   }
+
+   .menu__item {
+      margin: 0 9px;
    }
 
    .logo__text-subtitle {
@@ -131,13 +136,15 @@
    }
 }
 
-@media screen and (max-width: 990px){
 
+@media screen and (max-width: 801px){
    .logo__text-title {
-      display: none;
+      line-height: 49px;
+      margin-left: 10px;
    }
 
    .logo {
+      display: flex;
       padding: 2px;
    }
 
@@ -194,18 +201,18 @@
 
    .menu {
       position: fixed;
-      top: -100%;
-      left: 0;
-      width: 100%;
+      top: 0;
+      right: -100%;
+      width: 66%;
       height: 100%;
       overflow: auto;
-      background-color: #93f8ff;
+      background-color: #252525;
       padding: 60px 10px 20px;
       transition: all 0.3s ease 0s;
    }
 
    .menu.active {
-      top: 0;
+      right: 0;
    }
 
    .menu__list {
@@ -214,24 +221,36 @@
 
    .menu__item {
       margin-bottom: 20px;
-   }
-
-   .header a {
-      color: #333;
+      font-size: 20px;
+      font-weight: 700;
+      border-bottom: 1px solid #bebebe;
+      padding-bottom: 15px;
    }
 
    .body.lock {
       overflow: hidden;
    }
 
-   .contacts-top {
-      transform: scale(0);
+   .contacts-top__phone {
+      margin-bottom: 3px;
    }
-}
 
-@media screen and (max-width: 801px){
+   .contacts-top__mobile {
+      display: block;
+      font-size: 22px;
+      padding: 20px 20px;
+   }
+
+   .top__wrap {
+      padding-top: 110px;
+   }
 
    /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+   .top {
+      background: url(../images/bt-top-mobile.jpg) no-repeat;
+      background-position: left;
+      background-size: cover;
+   }
    .advantages__item {
       width: 100%;
    }
@@ -241,16 +260,112 @@
    }
    .contacts__map {
       width: 100%;
+      border: none;
+   }
+
+   .contacts-bottom__block {
+      width: 100%;
+   }
+
+   .contacts-bottom__text {
+      margin-left: 25px;
+   }
+
+   .top__content {
+      display: block;
+      text-align: center;
+      width: 100%;
+   }
+
+   .top__title {
+      font-size: 40px;
+   }
+
+   .top__text {
+      font-size: 20px;
+   }
+
+   .top__message-text {
+      font-weight: 700;
+   }
+
+   .top__image-png {
+      display: none;
+   }
+
+   .top__message-text::after {
+      transform: scale(0);
+   }
+
+   .advantages__wrap {
+      margin-left: 30px;
+   }
+
+   .advantages__item::before {
+      width: 30px;
+      height: 30px;
+      left: -45px;
+   }
+
+   .slider__box-1,
+   .slider__box-2 {
+      float: none;
+      display: block;
+      width: 90%;
+      margin: 0 auto;
+   }
+
+   .slider__box-1 {
+      margin-bottom: 20px;
+   }
+
+   .contacts__message {
+      text-align: center;
+   }
+
+   .contacts__map {
+      height: 300px;
+   }
+
+   .logo__text-footer {
+      display: none;
+   }
+   .footer__text-email {
+      display: none;
    }
 }
 
-
 @media screen and (max-width: 480px) {
    /* smartphones, Android phones, landscape iPhone */
+   .section__title, .section__title-white {
+      font-size: 25px;
+   }
 
+   .top__title {
+      font-size: 31px;
+   }
+
+   .contacts-top__mobile {
+      font-size: 14px;
+   }
+
+   .contacts-bottom__geo,
+   .contacts-bottom__block {
+      font-size: 18px;
+   }
+
+   .contacts-top {
+      display: none;
+   }
 }
 
 @media screen and (max-width: 320px) {
    /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
- 
+   .top__text {
+      font-size: 21px;
+   }
+
+   .top__message-text {
+      font-size: 16px;
+   }
 }

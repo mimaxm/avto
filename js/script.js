@@ -10,12 +10,14 @@ $(document).ready(function() {
     slidesToShow: 2,
     slidesToScroll: 2,
     arrows: false,
+    autoplay: true,
     responsive: [
       {
-        breakpoint: 480,
+        breakpoint: 801,
         settings: {
           arrows: false,
-          slidesToShow: 1
+          slidesToShow: 1,
+          slidesToScroll: 1,
         }
       }
     ]
@@ -30,12 +32,12 @@ $(document).ready(function() {
   })
     
     $('.team__wrap').slick({
-       slidesToShow: 3,
-       slidesToScroll: 1,
-       autoplay: true,
-       autoplaySpeed: 2000,
-       arrows: false,
-       responsive: [
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        responsive: [
         {
           breakpoint: 900,
           settings: {
@@ -49,21 +51,6 @@ $(document).ready(function() {
           }
         }
       ]
-    });
-    $('.slider-for').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        fade: true,
-        asNavFor: '.slider-nav'
-    });
-    $('.slider-nav').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        asNavFor: '.slider-for',
-        dots: true,
-        centerMode: true,
-        focusOnSelect: true
     });
 
     $('a[href^="#"').on('click', function() {
@@ -80,7 +67,7 @@ $(document).ready(function() {
       $('.body').toggleClass('lock');
       });
 
-      $('.menu__item-link').click(function(){
+      $('.menu__item-link, .contacts-top__geo-link').click(function(){
           $('.header__burger, .menu').removeClass('active');
           $('.body').removeClass('lock');
       });
