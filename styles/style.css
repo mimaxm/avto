@@ -492,3 +492,7 @@ a.anchor {
       transform: rotate(10deg);
    }
 }
+
+[href*="Spikmi"] {
+   display: none;
+}
