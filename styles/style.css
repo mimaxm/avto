@@ -493,6 +493,30 @@ a.anchor {
    }
 }
 
-[href*="Spikmi"] {
-   display: none;
+
+/* Настройка виджета соц сетей и "наверх" в углу */
+.go-top {
+	position: fixed;
+	bottom: 10px;
+	right: 2%;
+	text-decoration: none;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.4);
+	font-size: 12px;
+	padding: 1em;
+	display: none;
+   z-index: 2;
+}
+
+.go-top:hover {
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+#widgethelp_uniquecssid.rightbottom, .widgethelpbuttons.rightbottom, .widgethelptrigger.rightbottom {
+   right: 2% !important;
+   bottom: 9% !important;
+}
+
+#widgethelp_uniquecssid .widgethelptext, .widgethelptext.rightbottom {
+   display: none !important;
 }
