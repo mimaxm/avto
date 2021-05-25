@@ -99,7 +99,7 @@ $(document).ready(function() {
           id:"544f5d178d4fb631ff496a68755a4eb3",
           iconopen:"fwidgethelp-commenting-o",
           maintitle:"",
-          mainbackground:"#46dee8",
+          mainbackground:"#35d3de",
           maincolor:"#f3f3f3",
           pulse:"widgethelp_pulse",
           fasize:"2",
