@@ -1,0 +1,168 @@
+/*!
+ *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+ .fwidgethelp {
+  display: inline-block;
+  font: normal normal normal 14px/1 widgethelpfont;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* makes the font 33% larger relative to the icon container */
+.fwidgethelp-lg {
+  font-size: 1.33333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+.fwidgethelp-15x {
+  font-size: 1.5em;
+}
+.fwidgethelp-2x {
+  font-size: 2em;
+}
+.fwidgethelp-3x {
+  font-size: 3em;
+}
+.fwidgethelp-4x {
+  font-size: 4em;
+}
+.fwidgethelp-5x {
+  font-size: 5em;
+}
+.fwidgethelp-fw {
+  width: 1.28571429em;
+  text-align: center;
+}
+.fwidgethelp-ul {
+  padding-left: 0;
+  margin-left: 2.14285714em;
+  list-style-type: none;
+}
+.fwidgethelp-ul > li {
+  position: relative;
+}
+.fwidgethelp-li {
+  position: absolute;
+  left: -2.14285714em;
+  width: 2.14285714em;
+  top: 0.14285714em;
+  text-align: center;
+}
+.fwidgethelp-li.fwidgethelp-lg {
+  left: -1.85714286em;
+}
+.fwidgethelp-border {
+  padding: .2em .25em .15em;
+  border: solid 0.08em #eeeeee;
+  border-radius: .1em;
+}
+.fwidgethelp-pull-left {
+  float: left;
+}
+.fwidgethelp-pull-right {
+  float: right;
+}
+.fwidgethelp.fwidgethelp-pull-left {
+  margin-right: .3em;
+}
+.fwidgethelp.fwidgethelp-pull-right {
+  margin-left: .3em;
+}
+
+.fwidgethelp.pull-left {
+  margin-right: .3em;
+}
+.fwidgethelp.pull-right {
+  margin-left: .3em;
+}
+.fwidgethelp-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+  animation: fa-spin 2s infinite linear;
+}
+.fwidgethelp-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+  animation: fa-spin 1s infinite steps(8);
+}
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+.fwidgethelp-rotate-90 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.fwidgethelp-rotate-180 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.fwidgethelp-rotate-270 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+.fwidgethelp-flip-horizontal {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+  -webkit-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+.fwidgethelp-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+:root .fwidgethelp-rotate-90,
+:root .fwidgethelp-rotate-180,
+:root .fwidgethelp-rotate-270,
+:root .fwidgethelp-flip-horizontal,
+:root .fwidgethelp-flip-vertical {
+  filter: none;
+}
+.fwidgethelp-stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+}
+.fwidgethelp-stack-1x,
+.fwidgethelp-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.fwidgethelp-stack-1x {
+  line-height: inherit;
+}
+.fwidgethelp-stack-2x {
+  font-size: 2em;
+}
+.fwidgethelp-inverse {
+  color: #ffffff;
+}

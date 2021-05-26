@@ -1,0 +1,242 @@
+/* <style> */
+
+#widgethelp_uniquecssid {
+visibility: hidden;
+position: fixed;
+z-index: 999999999;
+font-size: 16px;
+letter-spacing: normal;
+}
+
+#widgethelp_uniquecssid a {
+opacity: 1;
+cursor: pointer;
+outline: none;
+font-size: inherit;
+}
+
+#widgethelp_uniquecssid .widgethelptext {
+display: block;
+text-decoration: none;
+text-transform: none;
+font-family: 'Arial Tahoma Verdana', sans-serif;
+font-size: 0.7em;
+color: #fff;
+text-shadow: #000 -1px 1px 5px;
+cursor: pointer;
+}
+
+#widgethelp_uniquecssid #widgethelp_icon {
+  color: #fff;
+  background-color: #;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+}
+
+.widgethelptext.rightbottom {
+  position: relative;
+  right: 1px;
+  bottom: -5px;
+ }
+.widgethelptext.leftbottom {
+ position: relative;
+ left:0px;
+ bottom:-5px;
+ }
+.widgethelptext.lefttop {
+ position: relative;
+ top: 5px;
+ left:0;
+ }
+.widgethelptext.righttop {
+top: 3px;
+position: relative;
+ }
+.widgethelptext.leftcentery {
+top: 3px;
+position: relative;
+ }
+
+.widgethelptrigger {
+margin-top: 10px;text-align: center;
+z-index: 50;
+cursor: pointer;
+font-size: inherit;
+}
+
+.widgethelpbuttons {
+visibility: hidden;
+}
+#widgethelp_uniquecssid.righttop, .widgethelpbuttons.righttop, .widgethelptrigger.righttop{
+right: 2%;
+top: 2%;
+}
+#widgethelp_uniquecssid.rightbottom, .widgethelpbuttons.rightbottom, .widgethelptrigger.rightbottom{
+right: 2%;
+bottom: 2%;
+}
+#widgethelp_uniquecssid.lefttop, .widgethelpbuttons.lefttop, .widgethelptrigger.lefttop{
+left: 2%;
+top: 2%;
+}
+#widgethelp_uniquecssid.leftbottom, .widgethelpbuttons.leftbottom, .widgethelptrigger.leftbottom{
+left: 2%;
+bottom: 2%;
+}
+
+#widgethelp_uniquecssid.leftcentery, .widgethelpbuttons.leftcentery, .widgethelptrigger.leftcentery{
+left: 1%;
+top: 46%;
+}
+#widgethelp_uniquecssid.rightcentery, .widgethelpbuttons.rightcentery, .widgethelptrigger.rightcentery{
+right: 1%;
+top: 46%;
+}
+
+
+#widgethelp_uniquecssid .ui-stackmenu-item {
+padding:0;
+position: absolute;
+margin: 5px 0px;}
+
+		#widgethelp_uniquecssid ul {
+			margin:0;
+            padding:0;
+            font-size: inherit;
+		}
+
+		#widgethelp_uniquecssid ul li {
+			display: block;
+		}
+
+		#widgethelp_uniquecssid ul li .title {
+			display: none;
+		}
+
+       	#widgethelp_uniquecssid ul li img {
+          border:0px;
+        }
+
+		#widgethelp_uniquecssid ul li a:hover img,
+		#widgethelp_uniquecssid ul li a:hover .title
+         {
+			border-radius: 100px;
+			-webkit-border-radius: 100px;
+			-moz-border-radius: 100px;
+            box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+
+		}
+
+.widgethelp_shadow {
+background-color: #;
+border-radius: 100px;
+-webkit-border-radius: 100px;
+-moz-border-radius: 100px;
+box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+
+.widgethelp_shadow:hover {
+box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+
+        .widgethelpbuttons img,
+        .widgethelpbuttons i {
+        cursor: pointer;
+        background: #0099FF;
+        border:0px;
+        border-radius: 100px;
+        box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+        }
+
+        .widgethelpbuttons i:hover {
+        box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+
+                .widgethelpbuttons .fwidgethelp-telegram {
+          background: #27A5E7;
+        }
+        .widgethelpbuttons .fwidgethelp-facebook {
+          background: #4862A3;
+        }
+        .widgethelpbuttons .fwidgethelp-skype {
+          background: #00AFF0;
+        }
+        .widgethelpbuttons .fwidgethelp-twitter {
+          background: #55ACEE;
+        }
+        .widgethelpbuttons .fwidgethelp-whatsapp {
+          background: #03BE39;
+        }
+        .widgethelpbuttons .fwidgethelp-viber {
+          background: #675CA8;
+        }
+        .widgethelpbuttons .fwidgethelp-line-messenger {
+          background: #03BE39;
+        }
+
+
+.widgethelp_pulse {
+  border-radius: 50%;
+  box-shadow: 0 0 0 #;
+  animation: animationpulse 2s infinite;
+   -webkit-animation: animationpulse 2s ease-out;
+   -webkit-animation-iteration-count: infinite;
+}
+.widgethelp_pulse:hover {
+  animation: linear;
+}
+
+@-webkit-keyframes animationpulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 inherit;
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 15px rgba(0,0,0, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(0,0,0, 0);
+  }
+}
+@keyframes animationpulse {
+  0% {
+     transform: scale(1.0, 1.0);
+    -moz-box-shadow: 0 0 0 0 inherit;
+    box-shadow: 0 0 0 0 inherit;
+  }
+  10% {
+     transform: scale(1.1, 1.1);
+  }
+  15% {
+     transform: scale(1.0, 1.0);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 15px rgba(0,0,0, 0);
+      box-shadow: 0 0 0 15px rgba(0,0,0, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(0,0,0, 0);
+      box-shadow: 0 0 0 0 rgba(0,0,0, 0);
+  }
+}
+@-ms-keyframes animationpulse {
+    0% {
+        -ms-transform: scale(1.0, 1.0);
+        box-shadow: 0 0 5px #;
+    }
+    10% {
+        box-shadow: 0 0 15px #;
+        -ms-transform: scale(1.1, 1.1);
+    }
+    20% {
+     box-shadow: 0 0 5px #;
+        -ms-transform: scale(1.0, 1.0);
+    }
+    100% {
+    box-shadow: 0 0 5px #;
+       -ms-transform: scale(1.0, 1.0);
+    }
+}
+
+

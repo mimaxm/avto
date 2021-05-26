@@ -495,6 +495,57 @@ a.anchor {
 
 
 /* Настройка виджета соц сетей и "наверх" в углу */
+.wrapper__buttons {
+   position: fixed;
+   bottom: 60px;
+   right: 2%;
+   display: flex;
+   flex-direction: column-reverse;
+   gap: 1rem;
+}
+
+.wrapper__buttons button {
+   font-family: inherit;
+   outline: none;
+   border: none;
+   width: 4rem;
+   height: 4rem;
+   border-radius: 50%;
+   cursor: pointer;
+   background-color: transparent;
+}
+
+.wrapper__buttons button svg {
+   width: 4rem;
+   height: 4rem;
+   transition: all 0.3s ease 0s;
+}
+.wrapper__buttons button:hover {
+   animation: shake 1.2s ease-in-out;
+}
+.wrapper__buttons .add {
+   z-index: 99;
+   transition: all 0.3s ease 0s;
+}
+.wrapper__buttons .message__icon {
+   position: relative;
+   bottom: -6rem;
+   opacity: 0;
+   transform: rotatez(-45deg);
+   transition: all 0.3s ease 0s;
+   pointer-events: none;
+}
+.wrapper-open .message__icon {
+   opacity: 1;
+   bottom: 0;
+   transform: rotatez(0deg);
+   pointer-events: auto;
+}
+
+.wrapper-open .add svg {
+   transform: rotatez(135deg);
+}
+
 .go-top {
 	position: fixed;
 	bottom: 10px;
