@@ -296,13 +296,37 @@ a.anchor {
 
 .advantages__item::before {
    content: '';
-   background: url(../images/check.svg) no-repeat;
    position: absolute;
    width: 40px;
    height: 40px;
    background-size: contain;
    left: -60px;
 }
+
+.advantages__item--garant::before {
+   background: url(../images/check.svg) no-repeat;
+}
+
+.advantages__item--sklad::before {
+   background: url(../images/sklad.svg) no-repeat;
+}
+
+.advantages__item--srok::before {
+   background: url(../images/srok.svg) no-repeat;
+}
+
+.advantages__item--team::before {
+   background: url(../images/team.svg) no-repeat;
+}
+
+.advantages__item--tool::before {
+   background: url(../images/tool.svg) no-repeat;
+}
+
+.advantages__item--evakuator::before {
+   background: url(../images/evakuator.svg) no-repeat;
+}
+
 
 .advantages__title {
    font-size: 18px;
