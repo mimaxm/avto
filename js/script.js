@@ -1,10 +1,16 @@
-$(document).ready(function() {
+$(window).on('load', function(){
     $("#slider-box-1").twentytwenty({
         click_to_move: true, 
     });
     $("#slider-box-2").twentytwenty({
       click_to_move: true, 
-  });
+    });
+    $("#slider-box-3").twentytwenty({
+      click_to_move: true, 
+    });
+    $("#slider-box-4").twentytwenty({
+      click_to_move: true, 
+    });
 
   const gallerySlider = $('.gallery__slide').slick({
     slidesToShow: 2,
