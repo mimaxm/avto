@@ -246,23 +246,20 @@ a.anchor {
 }
 
 .services {
-   background: url('../images/bg-services.jpg') no-repeat;
-   background-size: cover;
-   background-position: center;
+   background-color: #252525;
 }
 
 .services__wrap {
    display: flex;
    width: 100%;
    flex-wrap: wrap;
-   padding-bottom: 60px;
 }
 
 .services__item {
    background: #ebebeb;
    max-width: 365px;
    width: 100%;
-   margin: 0 auto 50px;
+   margin: 0 auto 60px;
 }
 
 .services__img {
@@ -336,9 +333,7 @@ a.anchor {
 }
 
 .team {
-   background: url('../images/bg-team.jpg') no-repeat;
-   background-size: cover;
-   background-position: center;
+   background-color: #252525;
 }
 
 .team__wrap {
@@ -394,9 +389,7 @@ a.anchor {
 }
 
 .gallery {
-   background: url('../images/bg-services.jpg') no-repeat;
-   background-size: cover;
-   background-position: center top;
+   background-color: #252525;
    padding-bottom: 60px;
 }
 
@@ -544,13 +537,16 @@ a.anchor {
    height: 4rem;
    transition: all 0.3s ease 0s;
 }
+
 .wrapper__buttons button:hover {
    animation: shake 1.2s ease-in-out;
 }
+
 .wrapper__buttons .add {
    z-index: 99;
    transition: all 0.3s ease 0s;
 }
+
 .wrapper__buttons .message__icon {
    position: relative;
    bottom: -6rem;
@@ -559,6 +555,7 @@ a.anchor {
    transition: all 0.3s ease 0s;
    pointer-events: none;
 }
+
 .wrapper-open .message__icon {
    opacity: 1;
    bottom: 0;
@@ -585,13 +582,4 @@ a.anchor {
 
 .go-top:hover {
 	background-color: rgba(0, 0, 0, 0.6);
-}
-
-#widgethelp_uniquecssid.rightbottom, .widgethelpbuttons.rightbottom, .widgethelptrigger.rightbottom {
-   right: 2% !important;
-   bottom: 9% !important;
-}
-
-#widgethelp_uniquecssid .widgethelptext, .widgethelptext.rightbottom {
-   display: none !important;
 }
